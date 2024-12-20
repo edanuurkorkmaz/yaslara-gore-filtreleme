@@ -8,7 +8,7 @@ Her obje için yaş > 18 kontrol edilir.
 
 Yeni obje dizisi döndürülür. */
 
-const students = [
+const people = [
     {
         id: 1,
         firstName: "Edanur",
@@ -34,6 +34,13 @@ const students = [
         age: 17
     }
 ]
-    const overAges = students.filter(student => student.age >18 );
+    function overEighteen(people){
+        return people.filter(person => person.age > 18);
+    }
 
-    console.log(overAges);
+    const justChecking = overEighteen(people);
+
+    console.log(justChecking);
+    
+
+    
